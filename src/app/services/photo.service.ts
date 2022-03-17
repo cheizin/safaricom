@@ -19,6 +19,7 @@ export class PhotoService {
       mediaType: this.camera.MediaType.PICTURE
     }
     
+    
     this.camera.getPicture(options).then((imageData) => {
       // Add new photo to gallery
       this.photos.unshift({
